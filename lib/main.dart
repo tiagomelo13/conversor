@@ -41,9 +41,9 @@ class _HomeState extends State<Home> {
   final euroController = TextEditingController();
 
   void _realChanged(String text) {
-    double? dolarNum = double.parse(dolar);
-    double? euroNum = double.parse(euro);
-    double? real = double.parse(text);
+    double dolarNum = double.parse(dolar);
+    double euroNum = double.parse(euro);
+    double real = double.parse(text);
     dolarController.text = (real / dolarNum).toStringAsFixed(2);
     euroController.text = (real / euroNum).toStringAsFixed(2);
   }
